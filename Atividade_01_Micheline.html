@@ -14,32 +14,32 @@ Os  comentários feitos no código são para em ajudar  a lembrar depois
 
 */
 
-var i, novaaltura, sexo, maioralt = 0, menoralt = 0, mulh = 0, homens = 0, mediahomens = 0, contamulh = 0, contahom = 0;
+var i, novaAltura, sexo, maiorAltura = 0, menorAltura = 0, mulheres = 0, homens = 0, mediaHomens = 0, contaMulheres = 0, contaHomens = 0;
 
             for(i = 1 ;i <= 15; i++) {        
-                novaaltura = parseFloat(prompt("Informe sua altura["+i+"]:")); // parseFloat converte em numero float
+                novaAltura = parseFloat(prompt("Informe sua altura["+i+"]:")); // parseFloat converte em numero float
                 sexo = prompt("Sexo: M ou F:").toUpperCase(); // .toUpperCase() coverte a resposta em maiúsculas
 
 
                 if(i == 1) {
-                    menoralt = novaaltura;
-                } if(novaaltura > maioralt) { 
-                    maioralt = novaaltura;
-                } if(novaaltura < menoralt) { 
-                    menoralt = novaaltura;
+                    menorAltura = novaAltura;
+                } if(novaAltura > maiorAltura) { 
+                    maiorAltura = novaAltura;
+                } if(novaAltura < menorAltura) { 
+                    menorAltura = novaAltura;
                 } if(sexo == 'F') {
-                    mulh += novaaltura; //aqui vai somar as alturas de todas as mulheres
-                    contamulh++;// aqui vai contar quantas mulheres
+                    mulheres += novaAltura; //aqui vai somar as alturas de todas as mulheres
+                    contaMulheres++;// aqui vai contar quantas mulheres
                 } else if(sexo == 'M') {
-                    homens += novaaltura;
-                    contahom++;
+                    homens += novaAltura;
+                    contaHomens++;
                 }
             }
-            mediahomens = (homens/contahom).toFixed(2); // .toFixed() define numero d casas decimais dentro do parênteses
-            alert("A maior altura é: "+maioralt +"metros"); 
-            alert("A menor altura é: "+menoralt +"metros");
-            alert("A altura média de homens é de: "+mediahomens);
-            alert("O número de mulheres é de : "+contamulh);
+            mediaHomens = (homens/contaHomens).toFixed(2); // .toFixed() define numero d casas decimais dentro do parênteses
+            alert("A maior altura é: "+maiorAltura +"metros"); 
+            alert("A menor altura é: "+menorAltura +"metros");
+            alert("A altura média de homens é de: "+mediaHomens);
+            alert("O número de mulheres é de : "+contaMulheres);
 
 
 
