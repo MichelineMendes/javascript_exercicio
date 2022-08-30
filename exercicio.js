@@ -24,8 +24,8 @@ var i, novaAltura, sexo, maiorAltura = 0, menorAltura = 0, mulheres = 0, homens 
                     homens += novaAltura;
                     contaHomens++;
                 }
-                        if (contaHomens > 0){
-                       mediaHomens = (homens/contaHomens).toFixed(2); // .toFixed() define numero de casas decimais dentro do parênteses
+                  if (contaHomens > 0){
+                     mediaHomens = (homens/contaHomens).toFixed(2); // .toFixed() define numero de casas decimais dentro do parênteses
                    }
             }
             mediaHomens = (homens/contaHomens).toFixed(2); // .toFixed() define numero d casas decimais dentro do parênteses
